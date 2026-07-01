@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #87CEEB 0%, #F4C2C2 100%);
+    color: #333;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Top middle heading */
+  .top-text {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .top-text h1 {
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #2c2c2c;
+  }
+  .top-text p {
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #444;
+  }
+
+  /* Hamburger menu - top right corner */
+  .hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #333;
+    margin: 4px 0;
+    border-radius: 2px;
+  }
+
+  /* Left middle nav list */
+  .side-nav {
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+  }
+  .side-nav ul {
+    list-style: none;
+  }
+  .side-nav li {
+    margin: 18px 0;
+    font-size: 18px;
+  }
+  .side-nav a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-weight: bold;
+  }
+  .side-nav a:hover {
+    color: #ffffff;
+  }
+
+  /* Bottom about section */
+  .bottom-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.35);
+  }
+  .bottom-section h2 {
+    font-size: 18px;
+    color: #2c2c2c;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Hamburger menu top right -->
+  <div class="hamburger" onclick="alert('Menu clicked')">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Top middle text -->
+  <div class="top-text">
+    <h1>Welcome to the Boot</h1>
+    <p>This is my personal space on the web.</p>
+  </div>
+
+  <!-- Left middle nav -->
+  <nav class="side-nav">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#studies">Studies</a></li>
+    </ul>
+  </nav>
+
+  <!-- Bottom text -->
+  <div class="bottom-section" id="about">
+    <h2>About</h2>
+  </div>
+
+</body>
+</html>
